@@ -47,7 +47,7 @@ export interface BananaConstants {
   shelf_life_days: Record<string, [number, number]>;
 }
 
-const BASE = ""; // proxied by Vite -> http://localhost:8000
+const BASE = "https://food-spoilage-api-docker.onrender.com";
 
 export async function postPredict(req: PredictRequest): Promise<PredictionResponse> {
   const r = await fetch(`${BASE}/api/predict`, {
