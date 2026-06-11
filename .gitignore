@@ -27,5 +27,4 @@ data/raw/*
 data/processed/*.csv
 
 # ML artifacts — large, regenerable
-ml/artifacts/*.keras
-ml/artifacts/*.joblib
+
