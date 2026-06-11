@@ -1,0 +1,41 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: bss-backend:0.1.0
+    container_name: bss-backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - BSS_LOG_LEVEL=INFO
+      - BSS_CORS_ORIGINS=["http://localhost:5173"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ml/artifacts:/app/ml/artifacts
+      - ./data:/app/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: bss-frontend:0.1.0
+    container_name: bss-frontend
+    depends_on:
+      - backend
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://backend:8000
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+      - ./frontend/tsconfig.json:/app/tsconfig.json
+      - ./frontend/tailwind.config.ts:/app/tailwind.config.ts
+      - ./frontend/postcss.config.js:/app/postcss.config.js

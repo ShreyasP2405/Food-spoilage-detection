@@ -1,0 +1,59 @@
+{
+  "commodity": "banana_cavendish",
+  "scientific_name": "Musa acuminata AAA",
+  "climacteric": true,
+  "optimal": {
+    "temp_c_min": 13.0,
+    "temp_c_max": 14.0,
+    "temp_c_target": 13.5,
+    "humidity_pct_min": 90.0,
+    "humidity_pct_max": 95.0,
+    "humidity_pct_target": 92.5
+  },
+  "danger_thresholds": {
+    "chilling_injury_below_c": 13.0,
+    "co2_toxicity_above_pct": 7.0,
+    "co2_toxicity_above_ppm": 70000,
+    "high_temp_above_c": 30.0,
+    "low_humidity_below_pct": 80.0
+  },
+  "shelf_life_days": {
+    "at_14c_air": [14, 28],
+    "at_22c_room": [7, 11],
+    "at_32c_hot": [3, 5]
+  },
+  "respiration": {
+    "base_rate_mg_co2_per_kg_h_at_14c": 10.0,
+    "ripe_co2_L_per_kg_h": 7.6,
+    "cold_co2_L_per_kg_h": 1.2,
+    "climacteric_peak_mg_co2_per_kg_h": 56.8,
+    "climacteric_peak_with_ethylene_mg_co2_per_kg_h": 74.2,
+    "ethylene_peak_uL_per_kg_h": 7.4
+  },
+  "kinetics": {
+    "activation_energy_J_per_mol": 80000.0,
+    "gas_constant_R": 8.314,
+    "Q10": 2.5,
+    "reference_temp_c": 14.0
+  },
+  "ripeness_scale": {
+    "1": "all_green",
+    "2": "green_with_trace_yellow",
+    "3": "more_green_than_yellow",
+    "4": "more_yellow_than_green",
+    "5": "yellow_with_green_tips",
+    "6": "all_yellow",
+    "7": "yellow_flecked_brown_overripe"
+  },
+  "container_defaults": {
+    "volume_m3": 0.05,
+    "banana_mass_kg": 1.5,
+    "leak_rate_per_hour": 0.15
+  },
+  "citations": [
+    "UC Davis Postharvest Technology Center, Banana Recommendations for Maintaining Postharvest Quality",
+    "Chitarra, M.I. & Chitarra, A.B., Postharvest of Fruits and Vegetables (banana ripeness scale)",
+    "Goldfinger banana respiration study (ResearchGate) - climacteric CO2 and ethylene rates",
+    "Shelf-life of bananas with 1-MCP at 27C (Academia.edu)"
+  ]
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Data — keep schemas, not bulk
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.csv
+
+# ML artifacts — large, regenerable
+ml/artifacts/*.keras
+ml/artifacts/*.joblib

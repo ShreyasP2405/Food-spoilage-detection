@@ -1,0 +1,89 @@
+2026-04-28 02:40:48.067631: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-04-28 02:40:48.075840: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-04-28 02:40:48.129176: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-04-28 02:40:48.155404: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-04-28 02:40:48.201298: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-04-28 02:40:48.217674: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-04-28 02:40:48.310018: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-04-28 02:40:49.918609: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Epoch 1/40
+219/219 - 27s - 123ms/step - loss: 0.1620 - mae: 0.3064 - val_loss: 0.0083 - val_mae: 0.0795
+Epoch 2/40
+219/219 - 22s - 102ms/step - loss: 0.0102 - mae: 0.0881 - val_loss: 0.0043 - val_mae: 0.0529
+Epoch 3/40
+219/219 - 23s - 105ms/step - loss: 0.0082 - mae: 0.0754 - val_loss: 0.0142 - val_mae: 0.0917
+Epoch 4/40
+219/219 - 29s - 133ms/step - loss: 0.0063 - mae: 0.0682 - val_loss: 0.0041 - val_mae: 0.0518
+Epoch 5/40
+219/219 - 24s - 110ms/step - loss: 0.0043 - mae: 0.0573 - val_loss: 0.0025 - val_mae: 0.0396
+Epoch 6/40
+219/219 - 19s - 87ms/step - loss: 0.0037 - mae: 0.0533 - val_loss: 0.0025 - val_mae: 0.0404
+Epoch 7/40
+219/219 - 17s - 78ms/step - loss: 0.0034 - mae: 0.0507 - val_loss: 0.0020 - val_mae: 0.0355
+Epoch 8/40
+219/219 - 18s - 82ms/step - loss: 0.0030 - mae: 0.0477 - val_loss: 0.0026 - val_mae: 0.0428
+Epoch 9/40
+219/219 - 20s - 91ms/step - loss: 0.0030 - mae: 0.0468 - val_loss: 0.0021 - val_mae: 0.0382
+Epoch 10/40
+219/219 - 22s - 101ms/step - loss: 0.0026 - mae: 0.0440 - val_loss: 0.0018 - val_mae: 0.0327
+Epoch 11/40
+219/219 - 22s - 100ms/step - loss: 0.0027 - mae: 0.0444 - val_loss: 0.0042 - val_mae: 0.0506
+Epoch 12/40
+219/219 - 22s - 101ms/step - loss: 0.0024 - mae: 0.0413 - val_loss: 0.0016 - val_mae: 0.0295
+Epoch 13/40
+219/219 - 22s - 101ms/step - loss: 0.0021 - mae: 0.0394 - val_loss: 0.0015 - val_mae: 0.0305
+Epoch 14/40
+219/219 - 21s - 97ms/step - loss: 0.0024 - mae: 0.0417 - val_loss: 0.0014 - val_mae: 0.0275
+Epoch 15/40
+219/219 - 21s - 98ms/step - loss: 0.0020 - mae: 0.0380 - val_loss: 0.0012 - val_mae: 0.0281
+Epoch 16/40
+219/219 - 23s - 106ms/step - loss: 0.0017 - mae: 0.0350 - val_loss: 0.0011 - val_mae: 0.0254
+Epoch 17/40
+219/219 - 20s - 92ms/step - loss: 0.0019 - mae: 0.0368 - val_loss: 0.0018 - val_mae: 0.0320
+Epoch 18/40
+219/219 - 16s - 75ms/step - loss: 0.0018 - mae: 0.0352 - val_loss: 0.0013 - val_mae: 0.0257
+Epoch 19/40
+219/219 - 18s - 80ms/step - loss: 0.0016 - mae: 0.0337 - val_loss: 9.9886e-04 - val_mae: 0.0253
+Epoch 20/40
+219/219 - 17s - 77ms/step - loss: 0.0017 - mae: 0.0346 - val_loss: 8.2537e-04 - val_mae: 0.0221
+Epoch 21/40
+219/219 - 17s - 76ms/step - loss: 0.0014 - mae: 0.0316 - val_loss: 8.8410e-04 - val_mae: 0.0222
+Epoch 22/40
+219/219 - 17s - 76ms/step - loss: 0.0014 - mae: 0.0309 - val_loss: 0.0012 - val_mae: 0.0275
+Epoch 23/40
+219/219 - 17s - 77ms/step - loss: 0.0014 - mae: 0.0318 - val_loss: 8.2995e-04 - val_mae: 0.0221
+Epoch 24/40
+219/219 - 17s - 77ms/step - loss: 0.0013 - mae: 0.0295 - val_loss: 0.0013 - val_mae: 0.0291
+Epoch 25/40
+219/219 - 16s - 74ms/step - loss: 0.0012 - mae: 0.0290 - val_loss: 9.0090e-04 - val_mae: 0.0234
+[1m 1/28[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m8s[0m 331ms/step[1m 3/28[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 47ms/step [1m 5/28[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m1s[0m 47ms/step[1m 7/28[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 45ms/step[1m 8/28[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step[1m 9/28[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step[1m11/28[0m [32m━━━━━━━[0m[37m━━━━━━━━━━━━━[0m [1m0s[0m 46ms/step[1m13/28[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 46ms/step[1m15/28[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 45ms/step[1m17/28[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 45ms/step[1m19/28[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 45ms/step[1m21/28[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 45ms/step[1m23/28[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 45ms/step[1m25/28[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 45ms/step[1m27/28[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 44ms/step[1m28/28[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 51ms/step[1m28/28[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 52ms/step
+[1m 1/32[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 62ms/step[1m 3/32[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 42ms/step[1m 5/32[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m1s[0m 43ms/step[1m 7/32[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m1s[0m 42ms/step[1m 9/32[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step[1m11/32[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 43ms/step[1m13/32[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 43ms/step[1m15/32[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 43ms/step[1m17/32[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 43ms/step[1m19/32[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 44ms/step[1m21/32[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 44ms/step[1m23/32[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m0s[0m 44ms/step[1m25/32[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 44ms/step[1m27/32[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 44ms/step[1m29/32[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 45ms/step[1m31/32[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 44ms/step[1m32/32[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 45ms/step
+{
+  "model": "lstm",
+  "trained_at": "2026-04-28T02:49:31.250404+00:00",
+  "data_sha256": "2b0e4c0ca0a5871e0d453dfd0f6ec95b3598e0adcee9d469abb52b2e8dccfac1",
+  "feature_order": [
+    "temp_c",
+    "humidity_pct",
+    "co2_ppm",
+    "ethylene_ppm",
+    "methane_ppm",
+    "hours_since_harvest",
+    "ripeness_estimate"
+  ],
+  "target": "days_until_spoilage",
+  "window": 48,
+  "val": {
+    "mae_days": 0.022064199671149254,
+    "rmse_days": 0.040629293141569024,
+    "r2": 0.9997931122779846
+  },
+  "test": {
+    "mae_days": 0.02366088330745697,
+    "rmse_days": 0.04332413605360607,
+    "r2": 0.9996989965438843,
+    "on_time_warning_rate_24h": 0.0,
+    "false_alarm_rate": 0.0
+  }
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "model": "random_forest_baseline",
+    "trained_at": "2026-04-28T02:38:28.024874+00:00",
+    "data_sha256": "2b0e4c0ca0a5871e0d453dfd0f6ec95b3598e0adcee9d469abb52b2e8dccfac1",
+    "feature_order": [
+      "temp_c",
+      "humidity_pct",
+      "co2_ppm",
+      "ethylene_ppm",
+      "methane_ppm",
+      "hours_since_harvest",
+      "ripeness_estimate"
+    ],
+    "target": "days_until_spoilage",
+    "val": {
+      "mae_days": 0.015344777787384531,
+      "rmse_days": 0.0650195642853352,
+      "r2": 0.9995124175628666
+    },
+    "test": {
+      "mae_days": 0.0222719434872315,
+      "rmse_days": 0.07730933781817971,
+      "r2": 0.9991535481628314,
+      "on_time_warning_rate_24h": 0.0,
+      "false_alarm_rate": 0.0
+    }
+  },
+  {
+    "model": "lstm",
+    "trained_at": "2026-04-28T02:49:31.250404+00:00",
+    "data_sha256": "2b0e4c0ca0a5871e0d453dfd0f6ec95b3598e0adcee9d469abb52b2e8dccfac1",
+    "feature_order": [
+      "temp_c",
+      "humidity_pct",
+      "co2_ppm",
+      "ethylene_ppm",
+      "methane_ppm",
+      "hours_since_harvest",
+      "ripeness_estimate"
+    ],
+    "target": "days_until_spoilage",
+    "window": 48,
+    "val": {
+      "mae_days": 0.022064199671149254,
+      "rmse_days": 0.040629293141569024,
+      "r2": 0.9997931122779846
+    },
+    "test": {
+      "mae_days": 0.02366088330745697,
+      "rmse_days": 0.04332413605360607,
+      "r2": 0.9996989965438843,
+      "on_time_warning_rate_24h": 0.0,
+      "false_alarm_rate": 0.0
+    }
+  },
+  {
+    "model": "lstm",
+    "trained_at": "2026-05-08T16:41:16.217475+00:00",
+    "data_sha256": "2b0e4c0ca0a5871e0d453dfd0f6ec95b3598e0adcee9d469abb52b2e8dccfac1",
+    "feature_order": [
+      "temp_c",
+      "humidity_pct",
+      "co2_ppm",
+      "ethylene_ppm",
+      "methane_ppm",
+      "hours_since_harvest",
+      "ripeness_estimate"
+    ],
+    "target": "days_until_spoilage",
+    "window": 48,
+    "val": {
+      "mae_days": 0.016999708488583565,
+      "rmse_days": 0.0332452654838562,
+      "r2": 0.999861478805542
+    },
+    "test": {
+      "mae_days": 0.019560465589165688,
+      "rmse_days": 0.03748636692762375,
+      "r2": 0.9997746348381042,
+      "on_time_warning_rate_24h": 0.0,
+      "false_alarm_rate": 0.0
+    }
+  }
+]
