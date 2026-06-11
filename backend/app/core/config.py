@@ -9,7 +9,11 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 
 class Settings(BaseSettings):
     app_name: str = "Banana Storage Saver"
-    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    cors_origins: list[str] = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://food-spoilage-detection-livid.vercel.app",
+]
     artifacts_dir: Path = REPO_ROOT / "ml" / "artifacts"
     references_dir: Path = REPO_ROOT / "data" / "references"
     log_level: str = "INFO"
